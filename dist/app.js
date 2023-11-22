@@ -37,5 +37,5 @@ config_1.default.sync()
 });
 //Se pone a escuchar la aplicación.
 app.listen(process.env.PORT, () => {
-    console.log(`Servidor corriendo en: http://${process.env.HOST}/${process.env.PORT}`);
+    console.log(`Servidor corriendo en: http://${process.env.HOST}:${process.env.PORT}`);
 });
