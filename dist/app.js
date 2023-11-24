@@ -7,14 +7,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const config_1 = __importDefault(require("./db/config"));
 const body_parser_1 = require("body-parser");
-const cors_1 = __importDefault(require("cors"));
 const dotenv_1 = __importDefault(require("dotenv"));
+const cors_1 = __importDefault(require("cors"));
 dotenv_1.default.config();
 const app = (0, express_1.default)();
 app.use((0, body_parser_1.json)());
 app.use((0, cors_1.default)());
 //app.use(urlencoded() );
-app.use(express_1.default.urlencoded({ extended: true })); //se establece esta opcion porque me estaba generando un error "body-parser deprecated undefined extended: provide extended option src\app.ts:16:38 Error: listen EACCES: permission denied 3000" 
+app.use(express_1.default.urlencoded({ extended: true })); //( urlencoded() ) //se establece esta opcion porque me estaba generando un error "body-parser deprecated undefined extended: provide extended option src\app.ts:16:38 Error: listen EACCES: permission denied 3000" 
 //Se define ruta para la raiz
 app.get('/', (req, res) => {
     res.send('Bienvenido a mi API');
@@ -33,7 +33,7 @@ config_1.default.sync()
     console.log('Database online');
 })
     .catch((err) => {
-    console.log('Erreor en la conexión con la base de datos ${err}');
+    console.log(`Erreor en la conexión con la base de datos ${err}`);
 });
 //Se pone a escuchar la aplicación.
 app.listen(process.env.PORT, () => {
