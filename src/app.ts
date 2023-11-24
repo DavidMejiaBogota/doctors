@@ -29,7 +29,7 @@ app.use( (req: Request, res: Response) =>{
 });
 
 
-app.use('/api/paciente', pacineteRoutes);
+app.use('/api/pacientes', pacineteRoutes);
 
 //Se establece la coneccion con la base de datos.
 connection.sync()
