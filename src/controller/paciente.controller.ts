@@ -17,7 +17,7 @@ export const getPacientes: RequestHandler = async (req, res) => {
         })
     }
 }
-//Para traer paciente por id
+//Para traer paciente por id.
 export const getPacientesByid: RequestHandler = async (req, res) => {
     try{
         const paciente = await Paciente.findByPk(req.params.id);
@@ -40,3 +40,23 @@ export const getPacientesByid: RequestHandler = async (req, res) => {
         })
     }
 }
+
+//Se crea el método para crear pacientes.
+export const createPaciente: RequestHandler = async (req, res) => {
+    try{
+        const paciente = await Paciente.create(req.body);
+        if (paciente) {
+            res.status(201).json({
+                message: 'Operación exitosa, se ha creado el paciente',
+                data: paciente
+            })
+        }
+    }catch(error:any){
+        res.status(500).json({
+            message: 'No se pudo crear el paciente',
+            error: error.message
+        });
+    }
+}
+
+//Se crea el método para actualizar pacientes.
