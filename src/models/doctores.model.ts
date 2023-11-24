@@ -1,5 +1,6 @@
 import { timeStamp } from "console";
 import { Table, Column, Model, DataType, HasMany } from "sequelize-typescript";
+import {Cita} from "./cita.model";
 
 @Table({
     timestamps: false,
@@ -43,4 +44,7 @@ export class Doctor extends Model {
         allowNull: false,
     })
     especialidad!: string;
+
+    @HasMany( ()=> Cita)
+    cita!: Cita [];
 }
