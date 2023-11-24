@@ -6,6 +6,7 @@ import { urlencoded, json } from "body-parser";
 import dotenv from 'dotenv';
 import cors from "cors";
 import bodyParser = require("body-parser");
+import pacineteRoutes from "./routes/paciente.routes";
 dotenv.config();
 
 const app = express();
@@ -26,6 +27,9 @@ app.use( (req: Request, res: Response) => {
 app.use( (req: Request, res: Response) =>{
     res.status(500).send('500: Internal Server Error');
 });
+
+
+app.use('/api/paciente', pacineteRoutes);
 
 //Se establece la coneccion con la base de datos.
 connection.sync()
