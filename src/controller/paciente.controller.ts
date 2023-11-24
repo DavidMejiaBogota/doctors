@@ -60,3 +60,25 @@ export const createPaciente: RequestHandler = async (req, res) => {
 }
 
 //Se crea el método para actualizar pacientes.
+export const updatePaciente: RequestHandler = async (req, res) => {
+    try{
+        const paciente = await Paciente.findByPk(req.params.id);
+        if (paciente){
+            const update = await paciente.update(req.body, {
+                where: {
+                    id_numeroCedula: req.params.id
+                }
+            });
+                res.status(200).json({
+                    message: 'Operación exitosa, se ha actualizado el paciente',
+                    data: paciente
+                });
+        }
+    }catch(error:any){
+        res.status(500).json({
+            message: 'No se pudo actualizar el paciente',
+            error: error.message
+        });
+    }
+}
+//Se crea el método para eliminar pacientes.
