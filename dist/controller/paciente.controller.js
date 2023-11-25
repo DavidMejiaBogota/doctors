@@ -88,6 +88,12 @@ const updatePaciente = (req, res) => __awaiter(void 0, void 0, void 0, function*
                 message: 'Operación exitosa, se ha actualizado el paciente',
             });
         }
+        else {
+            res.status(404).json({
+                message: 'Paciente no encontrado',
+                data: null
+            });
+        }
     }
     catch (error) {
         res.status(500).json({
@@ -109,6 +115,12 @@ const deletePaciente = (req, res) => __awaiter(void 0, void 0, void 0, function*
             });
             res.status(200).json({
                 message: 'Operación exitosa, se ha eliminado el paciente',
+            });
+        }
+        else {
+            res.status(404).json({
+                message: 'Paciente no encontrado',
+                data: null
             });
         }
     }

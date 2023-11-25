@@ -26,6 +26,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const sequelize_typescript_1 = require("sequelize-typescript");
 const dotenv = __importStar(require("dotenv"));
 const paciente_model_1 = require("../models/paciente.model");
+const cita_model_1 = require("../models/cita.model");
+const doctores_model_1 = require("../models/doctores.model");
 dotenv.config();
 const connection = new sequelize_typescript_1.Sequelize({
     dialect: 'mysql',
@@ -34,6 +36,6 @@ const connection = new sequelize_typescript_1.Sequelize({
     password: process.env.PASSWORD,
     database: process.env.DATABASE,
     logging: false,
-    models: [paciente_model_1.Paciente]
+    models: [paciente_model_1.Paciente, cita_model_1.Cita, doctores_model_1.Doctor]
 });
 exports.default = connection;
