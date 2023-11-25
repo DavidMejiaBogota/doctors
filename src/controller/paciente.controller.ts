@@ -72,7 +72,13 @@ export const updatePaciente: RequestHandler = async (req, res) => {
                 res.status(200).json({
                     message: 'Operación exitosa, se ha actualizado el paciente',
                 });
+        } else {
+            res.status(404).json({
+                message: 'Paciente no encontrado',
+                data: null
+            });
         }
+        
     }catch(error:any){
         res.status(500).json({
             message: 'No se pudo actualizar el paciente',
@@ -94,6 +100,11 @@ export const deletePaciente: RequestHandler = async (req, res) => {
                 res.status(200).json({
                     message: 'Operación exitosa, se ha eliminado el paciente',
                 });
+        } else {
+            res.status(404).json({
+                message: 'Paciente no encontrado',
+                data: null
+            });
         }
     }catch(error:any){
         res.status(500).json({

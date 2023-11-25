@@ -19,6 +19,9 @@ app.use(express.urlencoded({ extended: true }));//( urlencoded() ) //se establec
 app.get('/', (req: Request, res: Response) => {
     res.send('Bienvenido a mi API')
 });
+
+app.use('/api/pacientes', pacineteRoutes);
+
 //Se definen rutas inexistentes (Es importate siempre poner el error 404 antes del 500 en caso de que no exista la ruta y no se vaya directo a error del servidor) 
 app.use( (req: Request, res: Response) => {
     res.status(404).send('404: Page not foud')
@@ -28,8 +31,6 @@ app.use( (req: Request, res: Response) =>{
     res.status(500).send('500: Internal Server Error');
 });
 
-
-app.use('/api/pacientes', pacineteRoutes);
 
 //Se establece la coneccion con la base de datos.
 connection.sync()
