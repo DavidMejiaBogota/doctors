@@ -7,6 +7,7 @@ import dotenv from 'dotenv';
 import cors from "cors";
 import bodyParser = require("body-parser");
 import pacineteRoutes from "./routes/paciente.routes";
+import doctoreRoutes from "./routes/doctor.routes";
 dotenv.config();
 
 const app = express();
@@ -21,6 +22,7 @@ app.get('/', (req: Request, res: Response) => {
 });
 
 app.use('/api/pacientes', pacineteRoutes);
+app.use('/api/doctores', doctoreRoutes);
 
 //Se definen rutas inexistentes (Es importate siempre poner el error 404 antes del 500 en caso de que no exista la ruta y no se vaya directo a error del servidor) 
 app.use( (req: Request, res: Response) => {
