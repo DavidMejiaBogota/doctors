@@ -125,7 +125,7 @@ Te recomiendo que consultes la [documentación de `swagger-ui-express`](https://
 
 Modelo de la base de datos:
 
-
+![](imgs/Drigrama%20Modelo%20Entiendad%20Relacional..png)
 
 
 
