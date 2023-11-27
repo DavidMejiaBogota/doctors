@@ -178,13 +178,5 @@ CREATE TABLE cita (
 );
 
 
-Pruebas postman
-
-Doctor
-
-Paciente
-
-Citas
-
 
 
