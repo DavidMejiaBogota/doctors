@@ -180,7 +180,57 @@ CREATE TABLE cita (
 
 Pruebas postman
 
+Con el objetivo de realizar las pruebas y validaciones del adecuado funcionamiento de la APP Doctors, se realiza un paquete de pruebas con el cliente Postman y el servidor de la aplicación, verificando los tres modelos existentes: Doctores, Pacientes y Citas, a continuación se plasma evidencia del proceso:
+
 Doctor
+
+1.	Consultar todos los doctores de la base de datos:
+
+![](imgs/doctor/doct1.png)
+
+2.	Agregar un doctor:
+
+![](imgs/doctor/doct1.png)
+
+3.	Consulta a la bd a tabla doctor en la bd cita:
+
+![](imgs/doctor/doct3.png)
+
+4.	Consultar listado de todos los doctores:
+
+![](imgs/doctor/doct4.png)
+
+5.	Consulta de doctor por id:
+
+
+![](imgs/doctor/doct5.png)
+
+![](imgs/doctor/doct5_1.png)
+
+
+6.	Editar/Actualizar información de doctor:
+
+
+![](imgs/doctor/doct6.png)
+
+
+7.	Consulta de verificación de actualización de doctor a la BD en la tabla doctor:
+
+![](imgs/doctor/doct7.png)
+
+
+8.	Eliminación de doctor:
+
+
+![](imgs/doctor/doct8.png)
+
+
+9.	Consulta de verificación de eliminación de doctor a la bd doctor en la tabla doctor:
+
+
+![](imgs/doctor/doct9.png)
+
+
 
 Paciente
 
