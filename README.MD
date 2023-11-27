@@ -184,21 +184,29 @@ Con el objetivo de realizar las pruebas y validaciones del adecuado funcionamien
 
 Doctor
 
+
 1.	Consultar todos los doctores de la base de datos:
 
 ![](imgs/doctor/doct1.png)
 
+
 2.	Agregar un doctor:
+
 
 ![](imgs/doctor/doct1.png)
 
+
 3.	Consulta a la bd a tabla doctor en la bd cita:
+
 
 ![](imgs/doctor/doct3.png)
 
+
 4.	Consultar listado de todos los doctores:
 
+
 ![](imgs/doctor/doct4.png)
+
 
 5.	Consulta de doctor por id:
 
@@ -215,6 +223,7 @@ Doctor
 
 
 7.	Consulta de verificación de actualización de doctor a la BD en la tabla doctor:
+
 
 ![](imgs/doctor/doct7.png)
 
@@ -236,14 +245,64 @@ Paciente
 
 Citas
 
+
+1.	Consultar conexion módulo cita:
+
+
 ![](imgs/cita/cita01.png)
+
+
+2.	Agregar una cita:
+
+
 ![](imgs/cita/agregarCita1.png)
+
+
+3.	Agregar una nueva cita:
+
+
 ![](imgs/cita/agregarCita2.png)
-![](imgs/cita/EditarCita.png)
-![](imgs/cita/agregarCita2.png)
-![](imgs/cita/eliminarCita.png)
-![](imgs/cita/bdCitaEliminada.png)
-![](imgs/cita/findOneCita.png)
-![](imgs/cita/errorCita.png)
+
+
+4.	Consultar lista de citas en la base de datos:
+
+
 ![](imgs/cita/lista_cita.png)
+
+
+5. Editar cita
+
+
+![](imgs/cita/EditarCita2.png)
+
+
+6.	Editar cita por id_numeroCedula:
+
+
+![](imgs/cita/EditarCita.png)
+
+
+7.	Eliminación cita del 2023-11-26 Hora:10:40 :
+
+
+![](imgs/cita/eliminarCita.png)
+
+
+8.	Consulta de verificación de eliminación cita en la tabla cita:
+
+
+![](imgs/cita/bdCitaEliminada.png)
+
+
+9.	Consultar una única cita por los tres parámetros query– método de sequelize “ findOne”:
+
+
+![](imgs/cita/findOneCita.png)
+
+
+10.	 Error por integridad Referencial: En la cita le asignamos un doctor que no existe en la base de datos:
+
+
+![](imgs/cita/errorCita.png)
+
 
