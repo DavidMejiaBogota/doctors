@@ -214,6 +214,24 @@ Doctor
 ![](imgs/doctor/doct6.png)
 
 
+7.	Consulta de verificación de actualización de doctor a la BD en la tabla doctor:
+
+![](imgs/doctor/doct7.png)
+
+
+8.	Eliminación de doctor:
+
+
+![](imgs/doctor/doct8.png)
+
+
+9.	Consulta de verificación de eliminación de doctor a la bd doctor en la tabla doctor:
+
+
+![](imgs/doctor/doct9.png)
+
+
+
 Paciente
 
 Citas
