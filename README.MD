@@ -182,7 +182,7 @@ Pruebas postman
 
 Con el objetivo de realizar las pruebas y validaciones del adecuado funcionamiento de la APP Doctors, se realiza un paquete de pruebas con el cliente Postman y el servidor de la aplicación, verificando los tres modelos existentes: Doctores, Pacientes y Citas, a continuación se plasma evidencia del proceso:
 
-Doctor
+### CRUD Doctor
 
 
 1.	Consultar todos los doctores de la base de datos:
@@ -241,9 +241,76 @@ Doctor
 
 
 
-Paciente
+### CRUD Paciente
 
-Citas
+1.	Consulta al listado de pacientes:
+
+![](imgs/paciente/pac1.png)
+
+
+2.	Consulta del listado de pacientes a BD cita en la tabla paciente:
+
+
+![](imgs/paciente/pac2.png)
+
+
+3.	Creación paciente:
+
+![](imgs/paciente/pac3.png)
+
+
+4.	Consulta de verificación de paciente creado a la bd cita en la tabla paciente:
+
+
+![](imgs/paciente/pac4.png)
+
+
+5.	Consulta listado de todos los pacientes:
+
+
+![](imgs/paciente/pac5.png)
+
+
+6.	Consulta  de verificación de listado de todos los pacientes a la bd cita en la tabla paciente:
+
+
+![](imgs/paciente/pac6.png)
+
+
+7.	Consulta de paciente por id:
+
+
+![](imgs/paciente/pac7.png)
+
+![](imgs/paciente/pac7_7.png)
+
+![](imgs/paciente/pac7_7_7.png)
+
+
+8.	Actualizar paciente:
+
+![](imgs/paciente/pac8.png)
+
+
+9.	Consulta de verificación de actualización de datos a la BD en la tabla paciente:
+
+![](imgs/paciente/pac9.png)
+
+
+10.	Eliminar paciente:
+
+
+![](imgs/paciente/pac10.png)
+
+
+11.	Consulta de verificación de eliminación a la BD en la tabla paciente:
+
+![](imgs/paciente/pac11.png)
+
+
+
+
+### CRUD Citas
 
 
 1.	Consultar conexion módulo cita:
