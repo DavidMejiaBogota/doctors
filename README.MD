@@ -196,6 +196,22 @@ Doctor
 
 ![](imgs/doctor/doct3.png)
 
+4.	Consultar listado de todos los doctores:
+
+![](imgs/doctor/doct4.png)
+
+5.	Consulta de doctor por id:
+
+
+![](imgs/doctor/doct5.png)
+
+![](imgs/doctor/doct5_1.png)
+
+
+6.	Editar/Actualizar información de doctor:
+
+
+![](imgs/doctor/doct6.png)
 
 
 Paciente
