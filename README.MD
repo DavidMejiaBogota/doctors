@@ -184,14 +184,19 @@ Con el objetivo de realizar las pruebas y validaciones del adecuado funcionamien
 
 Doctor
 
-1.	Consultar todos los doctores de la base de datos: 
+1.	Consultar todos los doctores de la base de datos:
+
 ![](imgs/doctor/doct1.png)
 
 2.	Agregar un doctor:
+
 ![](imgs/doctor/doct1.png)
 
 3.	Consulta a la bd a tabla doctor en la bd cita:
+
 ![](imgs/doctor/doct3.png)
+
+
 
 Paciente
 
