@@ -186,3 +186,14 @@ Paciente
 
 Citas
 
+![](imgs/cita/cita01.png)
+![](imgs/cita/agregarCita1.png)
+![](imgs/cita/agregarCita2.png)
+![](imgs/cita/EditarCita.png)
+![](imgs/cita/agregarCita2.png)
+![](imgs/cita/eliminarCita.png)
+![](imgs/cita/bdCitaEliminada.png)
+![](imgs/cita/findOneCita.png)
+![](imgs/cita/errorCita.png)
+![](imgs/cita/lista_cita.png)
+
