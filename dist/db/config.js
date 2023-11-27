@@ -32,9 +32,10 @@ dotenv.config();
 const connection = new sequelize_typescript_1.Sequelize({
     dialect: 'mysql',
     host: process.env.HOST,
-    username: 'root', //process.env.USERNAME,
+    username: 'root',
     password: process.env.PASSWORD,
     database: process.env.DATABASE,
+    port: Number(process.env.DB_PORT),
     logging: false,
     models: [paciente_model_1.Paciente, cita_model_1.Cita, doctores_model_1.Doctor]
 });
