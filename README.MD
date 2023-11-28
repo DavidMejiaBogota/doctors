@@ -145,7 +145,7 @@ DROP DATABASE IF EXISTS cita;
 
 Crear la base de datos 'cita'
 ```
-CREATE DATABASE IF NOT EXISTS proveedores CHARACTER SET utf8mb4;
+CREATE DATABASE IF NOT EXISTS cita CHARACTER SET utf8mb4;
 ```
 
 Seleccionar la base de datos 'cita' para usarla
