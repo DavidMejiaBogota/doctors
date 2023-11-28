@@ -139,15 +139,22 @@ Usando DDL se definió la estructura de datos. Ejecutamos el fichero cita.sql en
 seguimos las instrucciones y pasos a continuación:
 
 Eliminar la base de datos 'cita' si existe
-
+```
 DROP DATABASE IF EXISTS cita;
+```
+
 Crear la base de datos 'cita'
-
+```
 CREATE DATABASE IF NOT EXISTS proveedores CHARACTER SET utf8mb4;
-Seleccionar la base de datos 'cita' para usarla
+```
 
+Seleccionar la base de datos 'cita' para usarla
+```
 USE cita;
+```
+
 Crea la tabla doctor:
+```
 CREATE TABLE doctor (
  id_profesional INT NOT NULL,
  nombre VARCHAR(50) NOT NULL,
@@ -156,8 +163,10 @@ CREATE TABLE doctor (
  especialidad ENUM('medicina_interna', 'medicina_general') NOT NULL,
  PRIMARY KEY (id_profesional)
 );
+```
 
 Crea la tabla paciente:
+```
 CREATE TABLE paciente(
  id_numeroCedula INT NOT NULL,
  nombre VARCHAR(50) NOT NULL,
@@ -166,8 +175,10 @@ CREATE TABLE paciente(
  fecha_nacimiento DATE NOT NULL,
  PRIMARY KEY (id_numeroCedula)
 );
+```
 
 Crea la tabla cita:
+```
 CREATE TABLE cita (
  fecha_hora DATETIME NOT NULL,
  id_profesional INT NOT NULL,
@@ -176,9 +187,10 @@ CREATE TABLE cita (
  FOREIGN KEY(id_numeroCedula) REFERENCES paciente (id_numeroCedula),
  PRIMARY KEY(id_profesional, id_numeroCedula, fecha_hora)
 );
+```
 
 
-Pruebas postman
+## Pruebas postman
 
 Con el objetivo de realizar las pruebas y validaciones del adecuado funcionamiento de la APP Doctors, se realiza un paquete de pruebas con el cliente Postman y el servidor de la aplicación, verificando los tres modelos existentes: Doctores, Pacientes y Citas, a continuación se plasma evidencia del proceso:
 
